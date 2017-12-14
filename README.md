@@ -8,23 +8,10 @@ platforms:
   - centos-7
   - debian-8
  
-:todo
+todo:
   - ubuntu-14.04
   - centos-6
   
 
-destroy
-===
-zabbix3_agent 'zabbix3_agent create' do
-  action :destroy
-end
-===
-
-
-Create
-===
-zabbix3_agent 'zabbix3_agent create' do
-  server_name 'localhost'
-  action :create
-end
-===
+Change the servername in the file:
+recipes/default.rb
